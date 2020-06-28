@@ -1,0 +1,204 @@
+ <!doctype HTML>
+<html>
+  
+<head>
+<title>The BookRec.</title>
+<link rel="stylesheet" type="text/css" href="bookrec.css">
+</head>
+<body>
+<div class="right">
+<div class="header">
+    <img src="unnamed.png" alt="bookrec" class="content" height="200px">
+<div class="fakeimg2">
+
+<h1>The BookRec.</h1>
+    
+  <hr>
+  <h5>find your new favourite book today!</h5>
+    
+</div>
+    </div>
+    </div>    
+   
+<div class="right">
+<div class="navbar">
+
+    <a href='BookRecAbout.html' class="btn">Contact Us</a>
+    <a href='BookRecSurvey.html' class="btn">Survey</a>
+    <a href='https://www.goodreads.com/user/show/80505896-riley' class="btn">Goodreads</a>
+    
+  </div>
+    </div>
+    
+    
+<div class="right">
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <hr>
+    <h2>Book of the Week</h2>
+    <h5>Developer's Weekly Favourite:</h5>
+    <div class="fakeimg3" style="height:500px;">
+        
+        <img src="download (2).jfif" alt="image" width="100" height="150">
+        <br>
+        <h4>The Way of Kings</h4>
+        
+        <p>Roshar is a world of stone and storms. Uncanny tempests of incredible power sweep across the rocky terrain so frequently that they have shaped ecology and civilization alike. Animals hide in shells, trees pull in branches, and grass retracts into the soilless ground. Cities are built only where the topography offers shelter.</p>
+      </div>
+    <h4>Some text about me in culpa qui officia deserunt mollit anim..</h4>
+    <hr>
+
+   <div class="slideshow-container">
+
+<div class="mySlides">
+  <q>Seek freedom and become captive of your desires. Seek discipline and find your liberty.</q>
+  <p class="author">- Frank Herbert</p>
+</div>
+
+<div class="mySlides">
+  <q>The purpose of a storyteller is not to tell you how to think, but to give you questions to think upon.</q>
+  <p class="author">- Brandon Sanderson</p>
+</div>
+
+<div class="mySlides">
+  <q>The degree of civilization in a society can be judged by entering its prisons.</q>
+  <p class="author">- Fyodor Dostoevsky</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">Previous</a>
+<a class="next" onclick="plusSlides(1)">Next</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+      <hr>
+      <h2>Our Logos</h2>
+      <h5>Logos Designed by The BookRec.</h5>
+      <br>
+      
+  <img src="image(3).png">
+      <br>
+ <img src="image(2).png">
+  </div>
+  <div class="main">
+    <hr>
+    <h2>Daily Recommendations</h2>
+    <h5>Developer Picks, June 9, 2020</h5>
+    <div class="fakeimg" style="height:1090px;"><img src="download (3).jfif" alt="Book" width="100" height="150">
+        <br>
+        <br>
+        <h4>Do Androids Dream of Electric Sheep?</h4>
+        
+        It was January 2021, and Rick Deckard had a license to kill.
+Somewhere among the hordes of humans out there, lurked several rogue androids. Deckard's assignment--find them and then..."retire" them. Trouble was, the androids all looked exactly like humans, and they didn't want to be found...
+        <br>
+        <hr>
+        <br>
+        <img src="download (4).jfif" alt="Italian Trulli" width="100" height="150">
+        <br>
+        <br>
+        <h4>Snow Crash</h4>
+        
+        In reality, Hiro Protagonist delivers pizza for Uncle Enzo's CosoNostra Pizza Inc., but in the Metaverse he's a warrior prince. Plunging headlong into the enigma of a new computer virus that's striking down hackers everywhere, he races along the neon-lit streets on a search-and-destroy mission for the shadowy virtual villain threatening to bring about infocalypse. Snow Crash is a mind-altering romp through a future America so bizarre, so outrageous… you'll recognize it immediately.
+        <hr>
+      <br><img src="download (5).jfif" alt="Italian Trulli" width="100" height="150">
+        <br>
+        <br>
+        <h4>The Gunslinger</h4>
+        
+        In the first book of this brilliant series, Stephen King introduces readers to one of his most enigmatic heroes, Roland of Gilead, The Last Gunslinger. He is a haunting figure, a loner on a spellbinding journey into good and evil. In his desolate world, which frighteningly mirrors our own, Roland pursues The Man in Black, encounters an alluring woman named Alice, and begins a friendship with the Kid from Earth called Jake. Both grippingly realistic and eerily dreamlike, The Gunslinger leaves readers eagerly awaiting the next chapter.
+        
+        <br>
+        
+        <br>
+      
+      </div>
+  
+    <hr>
+    <h2>User Recommendations</h2>
+    <h5>Books recommended by website visitors</h5>
+    <div class="fakeimg" style="height:375px;"><img src="4956467008_bc6764a474_c.jpg" alt="Italian Trulli" width="100" height="150">
+      <br>
+        <br>
+        <h4>Hyperion</h4>
+        
+        On the world called Hyperion, beyond the law of the Hegemony of Man, there waits the creature called the Shrike. There are those who worship it. There are those who fear it. And there are those who have vowed to destroy it. In the Valley of the Time Tombs, where huge, brooding structures move backward through time, the Shrike waits for them all. On the eve of Armageddon, with the entire galaxy at war, seven pilgrims set forth on a final voyage to Hyperion seeking the answers to the unsolved riddles of their lives. Each carries a desperate hope—and a terrible secret. And one may hold the fate of humanity in his hands. 
+        <br>
+        
+      </div>
+  
+    <hr>
+      <button onclick="myFunction()">Toggle dark mode</button>
+  </div>
+</div>
+    </div> 
+<div class="sidenav">
+  <a href="https://github.com/rileyjones-stack">Developer <br>GitHub</a>
+    <br>
+
+  <a href="BookRecSurvey.html">Survey</a>
+    <br>
+  <a href="BookRecAbout.html">Website <br> Info</a>
+    <br>
+  <a href="https://www.goodreads.com/user/show/80505896-riley">Goodreads</a>
+  
+        
+    
+
+
+  
+    </div>
+
+
+<script>
+function myFunction() {
+   
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+   
+}
+</script>
+    
+<div class="footer">
+  <h2><span class="blinking">Take our survey!</span></h2>
+</div>
+  
+  </body>
+</html>
+
+

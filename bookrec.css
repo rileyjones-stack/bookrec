@@ -1,0 +1,354 @@
+* {
+  box-sizing: border-box;
+  }
+
+/* hyperlink styling */
+a { 
+text-decoration: none;
+}
+ 
+/* this creates the button and the size of it */
+.btn {
+  background-color: #708090;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+  border-radius: 25px;
+}
+    
+ 
+/* this causes the fade colour */
+.btn:hover {
+  background-color: #708090;
+  color: white;
+}
+ 
+/*creates navbar*/
+.navbar {
+  overflow: hidden;
+  background-color: #708090;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+    
+}
+    
+
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: #FFE4E1;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: small;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link button at top */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #2F4F4F;
+  color: #FFE4E1;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #000080;
+  color: ;
+}
+
+    p {
+        color: white;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+
+body {
+background-color: #2F4F4F;
+font-family: "Times New Roman", Times, serif;
+margin: 0;
+background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+div {
+color: #FFE4E1;
+ word-wrap: break-word; 
+
+}
+
+/* try header with and without padding */
+.header {
+padding: 30px;
+text-align: center;
+background-color: #4682B4;
+background-image: url("image(1).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+transition: 0.2s;
+
+}
+    
+    
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+
+  
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  
+  padding: 20px;
+}
+  
+/* Main column */
+.main {
+  flex: 60%;
+  
+  padding: 20px;
+}
+  
+h5 {
+
+  color: #FFFFFF;
+  }
+  
+
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color:  	#708090;              
+  width: 100%;
+  padding: 20px;
+  color: #FFE4E1;
+  
+  border-radius: 25px;
+ 
+  border: 2px solid #000000;
+  
+  }
+    
+.fakeimg2 {
+  background-color:  #708090;
+  width: 25%;
+  padding: 10px;
+  color: #FFE4E1;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  }
+    
+.fakeimg3 {
+  background-color:  #708090;
+  width: 100%;
+  padding: 20px;
+  color: #FFE4E1;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  border-radius: 15px 50px 30px 5px;
+  border: 2px solid #000000;
+ 
+  }
+    
+    .right{
+       margin-left: 160px;  
+    }
+    
+.fakeimg4 {
+  background-color:  	#708090;              
+  width: 100%;
+  padding: 10px;
+  color: #FFE4E1;
+  
+ 
+ 
+  border: 4px solid #000000;
+  
+  }
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+ 
+/* adds the blinking text to our footer */
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #FFE4E1;    }
+    49%{    color: #FFE4E1; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #FFE4E1;    }
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #708090;
+  color: #FFE4E1;
+  border-radius: 25px;
+  
+}
+    /* main header styling */
+    h1 {
+        color: #FFFFFF;
+        font-family: 'Bebas Neue';font-size: 40px;
+       
+    }
+
+    h4 {
+       font-family: 'Adamina';
+       font-weight: normal;
+       font-size: large;
+    }
+    
+    h2 {
+         font-weight: normal;
+    }
+    
+    .content {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    }
+    
+
+ .sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-right: 7px solid #708090;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main3 {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    
+.dark-mode {
+  background-color: #111;
+  color: white;
+  
+}
+    
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #708090;
+  border-radius: 25px;
+  border: 2px solid #000000;
+
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #f1f1f1;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: #f1f1f1;}
